@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: envato-update-plugins\n"
+"POT-Creation-Date: 2015-02-27 16:10+0200\n"
+"PO-Revision-Date: 2015-02-27 16:16+0200\n"
+"Last-Translator: \n"
+"Language-Team: wp-kitten <wp.kytten@gmail.com>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../lib/MyEnvatoBaseApi.php:204 ../pages/index.php:81
+msgid "Settings"
+msgstr "Setari"
+
+#: ../lib/class-envato-api.php:69 ../lib/class-envato-api.php:106
+#: ../lib/class-envato-api.php:160
+msgid "Please enter your Envato Marketplace Username."
+msgstr "Vă rugăm să introduceți numele de utilizator Envato Market."
+
+#: ../lib/class-envato-api.php:73
+msgid "Please enter your Envato Marketplace API Key."
+msgstr "Vă rugăm introduceți cheia API Envato Market."
+
+#: ../lib/class-envato-api.php:98
+msgid "The API \"set\" is a required parameter."
+msgstr "\"item ID\"Envato Marketplace este un parametru obligatoriu."
+
+#: ../lib/class-envato-api.php:187
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr "\"item ID\"Envato Marketplace este un parametru obligatoriu."
+
+#: ../pages/index.php:45
+msgid "Invalid request."
+msgstr "Cererea nu este valida."
+
+#: ../pages/index.php:56
+msgid "Settings saved."
+msgstr "Setarile au fost salvate."
+
+#: ../pages/index.php:61
+msgid "Error saving data."
+msgstr "Setarile nu au putut fi salvate."
+
+#: ../pages/index.php:67 ../pages/index.php:73
+msgid "Please fill in all fields."
+msgstr "Va rugam sa completati toate campurile."
+
+#: ../pages/index.php:85
+msgid "User Account Information"
+msgstr "Informații cont"
+
+#: ../pages/index.php:88
+msgid ""
+"To obtain your API Key, visit your \"My Settings\" page on any of the Envato "
+"Marketplaces."
+msgstr ""
+"Pentru a obține cheia de API, vizitați pagina dvs. \"Setările mele\" pe "
+"oricare dintre site-urile Envato."
+
+#: ../pages/index.php:95
+msgid "Marketplace Username"
+msgstr "Nume utilizator Marketplace"
+
+#: ../pages/index.php:100
+msgid "Secret API Key"
+msgstr "Cheia secreta"
+
+#: ../pages/index.php:109
+msgid "Save Settings"
+msgstr "Salveaza setarile."
+
+#: ../pages/index.php:119
+msgid "User name is required."
+msgstr "Numele de utilizator este obligatoriu."
+
+#: ../pages/index.php:124
+msgid "API key is required."
+msgstr "Chea API este obligatorie."
