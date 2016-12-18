@@ -1,9 +1,11 @@
-<?php if(!defined('ABSPATH')) return; //#!-- Do not allow this file to be loaded unless in WP context
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	return;
+} //#!-- Do not allow this file to be loaded unless in WP context
 /*
 Plugin Name: My Envato Plugins
 Plugin URI: https://github.com/wp-kitten/envato-update-plugins
 Description: This plugin extends the default WordPress plugin update functionality to include all plugins bought from Envato Marketplace so buyers can easily update them from inside WordPress.
-Version: 1.0.0
+Version: 1.0.1
 Author: wp-kitten
 Author URI: http://themeforest.net/user/wp-kitten
 Text Domain: envato-update-plugins
@@ -32,25 +34,25 @@ License: GPL 3
 /**
  * Set the system path to the plugin's directory
  */
-define('EUP_PLUGIN_DIR', realpath(dirname(__FILE__)).'/');
+define( 'EUP_PLUGIN_DIR', realpath( dirname( __FILE__ ) ) . '/' );
 
 //#!-- Load dependencies
-require('lib/MyEnvatoBaseApi.php');
+require( 'lib/MyEnvatoBaseApi.php' );
 $myEnvato = new MyEnvatoBaseApi();
 
-add_action('admin_init', array($myEnvato, 'onInit'));
+add_action( 'admin_init', array( $myEnvato, 'onInit' ) );
 
 //#!-- Register base hooks
-register_deactivation_hook(__FILE__, array($myEnvato, 'onDeactivate'));
-register_uninstall_hook(__FILE__, array('MyEnvatoBaseApi', 'onUninstall'));
+register_deactivation_hook( __FILE__, array( $myEnvato, 'onDeactivate' ) );
+register_uninstall_hook( __FILE__, array( 'MyEnvatoBaseApi', 'onUninstall' ) );
 
 //#!-- Load text domain
-add_action('plugins_loaded', array($myEnvato, 'loadTextDomain'));
+add_action( 'plugins_loaded', array( $myEnvato, 'loadTextDomain' ) );
 
 //#!-- Add sidebar menu
-if(function_exists('is_multisite') && is_multisite()){
-	add_action('network_admin_menu', array($myEnvato,'addPluginPages'));
+if ( function_exists( 'is_multisite' ) && is_multisite() ) {
+	add_action( 'network_admin_menu', array( $myEnvato, 'addPluginPages' ) );
 }
 else {
-	add_action('admin_menu', array($myEnvato,'addPluginPages'));
+	add_action( 'admin_menu', array( $myEnvato, 'addPluginPages' ) );
 }
